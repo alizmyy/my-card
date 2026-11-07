@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Артем | Frontend Developer</title>
+    <style>
+        /* --- СБРОС СТИЛЕЙ --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117; /* Строгий темный фон */
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* --- КАРТОЧКА --- */
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 50px 40px;
+            max-width: 550px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* --- ТЕКСТ --- */
+        h1 {
+            color: #ffffff;
+            font-size: 32px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: #58a6ff; /* Синий акцент */
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .description {
+            font-size: 16px;
+            margin-bottom: 35px;
+            color: #8b949e;
+            border-left: 3px solid #58a6ff; /* Строгая полоса слева от текста */
+            padding-left: 15px;
+        }
+
+        /* --- НАВЫКИ --- */
+        .skills-title {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 5px;
+        }
+
+        .skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 35px;
+        }
+
+        .skills-list li {
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #c9d1d9;
+        }
+
+        /* --- КНОПКИ (ССЫЛКИ) --- */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: block;
+            text-decoration: none;
+            background-color: #21262d;
+            color: #c9d1d9;
+            padding: 14px;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #58a6ff;
+            color: #0d1117;
+            border-color: #58a6ff;
+        }
+
+        .btn-primary {
+            background-color: #238636;
+            color: white;
+            border-color: #2ea043;
+        }
+
+        .btn-primary:hover {
+            background-color: #2ea043;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Имя и специализация -->
+        <h1>Артем</h1>
+        <div class="subtitle">Frontend Developer / Студент 2-го курса</div>
+        
+        <!-- Строгое описание -->
+        <p class="description">
+            Изучаю веб-разработку с нуля. Владею основами HTML, CSS и JavaScript. 
+            Реализовал несколько учебных проектов, включая интерактивные опросы с использованием API и серверной логики. 
+            Стремлюсь к написанию чистого кода и созданию удобных интерфейсов.
+        </p>
+
+        <!-- Блок навыков -->
+        <div class="skills-title">Технологии</div>
+        <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>REST API</li>
+            <li>JSONBin</li>
+        </ul>
+
+        <!-- Ссылки -->
+        <div class="links">
+            <a href="https://github.com/alizmyy" target="_blank" class="btn btn-primary">Открыть мой GitHub</a>
+            <a href="https://alizmyy.github.io/movie-poll/" target="_blank" class="btn">Смотреть проект: Кино-опрос</a>
+            
+            <!-- Новая кнопка для перехода на страницу контактов -->
+            <a href="contact.html" class="btn">Связаться со мной</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связаться со мной | Артем</title>
+    <style>
+        /* --- СБРОС СТИЛЕЙ --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 50px 40px;
+            max-width: 550px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #58a6ff;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* --- БЛОКИ КОНТАКТОВ --- */
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            transition: 0.3s;
+        }
+
+        .contact-item:hover {
+            border-color: #58a6ff;
+        }
+
+        .contact-label {
+            font-size: 13px;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .contact-value {
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s;
+            word-break: break-all; /* Чтобы длинная почта не вылезала за края на телефоне */
+        }
+
+        .contact-value:hover {
+            color: #58a6ff;
+        }
+
+        /* --- ДОПОЛНИТЕЛЬНЫЙ ТЕКСТ --- */
+        .extra-text {
+            font-size: 15px;
+            color: #8b949e;
+            border-left: 3px solid #58a6ff;
+            padding-left: 15px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        /* --- КНОПКИ --- */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: block;
+            text-decoration: none;
+            background-color: #21262d;
+            color: #c9d1d9;
+            padding: 14px;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #58a6ff;
+            color: #0d1117;
+            border-color: #58a6ff;
+        }
+
+        .btn-primary {
+            background-color: #238636;
+            color: white;
+            border-color: #2ea043;
+        }
+
+        .btn-primary:hover {
+            background-color: #2ea043;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Связаться со мной</h1>
+        <div class="subtitle">Открыт к диалогу и предложениям</div>
+        
+        <!-- Блок с контактами -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="contact-label">Telegram</span>
+                <a href="https://t.me/vpootoke" target="_blank" class="contact-value">@vpootoke</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <!-- Атрибут mailto: делает почту кликабельной -->
+                <a href="mailto:seckirinartem@yandex.ru" class="contact-value">seckirinartem@yandex.ru</a>
+            </div>
+        </div>
+
+        <!-- Текст, чтобы страница не была пустой -->
+        <p class="extra-text">
+            "Всегда рад обсудить новые проекты, интересные задачи или просто поболтать о технологиях. Пишите в любое время — отвечу, как только освобожусь."
+        </p>
+
+        <!-- Кнопки навигации -->
+        <div class="links">
+            <a href="index.html" class="btn btn-primary">← Вернуться на главную</a>
+        </div>
+    </div>
+
+</body>
+</html>
